@@ -3,7 +3,7 @@ import { nanoid } from "nanoid";
 import ContactFrom from "./ContactFrom";
 import ContactList from "./contactList";
 import Filter from "./Filter";
-import { Seccion,TitlePhone, SectionContact, TitleContact } from "./App.styled";
+import { Section,TitlePhone, SectionContact, TitleContact } from "./App.styled";
 
 
 class App extends Component {
@@ -58,10 +58,10 @@ class App extends Component {
 
     return (
       <div>
-        <Seccion title= "Phonebook">
+        <Section title= "Phonebook">
           <TitlePhone>Phonebook</TitlePhone>
           <ContactFrom onSubmit={this.addContact} />
-        </Seccion>
+        </Section>
         <SectionContact title="Contacts">
           <TitleContact>Contacts</TitleContact>
           <Filter value={filter} onChange={this.viewfilter} />

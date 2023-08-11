@@ -1,7 +1,7 @@
 
 import PropTypes from "prop-types";
 import React, { Component } from "react";
-import { From, Label, Input, Button } from "./ContactFrom.styled";
+import { Form, Label, Input, Button } from "./ContactFrom.styled";
 
 class ContactFrom extends Component {
   state = {
@@ -31,7 +31,7 @@ class ContactFrom extends Component {
     const { name, number } = this.state;
 
     return (
-      <From onSubmit = { this.submit }>
+      <Form onSubmit = { this.submit }>
         <Label htmlFor = { this.nameId }>
           Name
           <Input
@@ -61,7 +61,7 @@ class ContactFrom extends Component {
         </Label>
 
         <Button type="submit">Add contact</Button>
-      </From>
+      </Form>
     );
   }
 }
