@@ -1,23 +1,20 @@
 
 import styled from "styled-components";
 
-//FORMULARIO PHONEBOOK
 
 export const Form = styled.form`
   width: 360px;
   border: 2px solid #5a5a5a;
-`;
+`
 
-//LABEL PHONEBOOK
 export const Label = styled.label`
   display: flex;
   flex-direction: column;
   padding: 10px;
   border: 1px solid 2e6fdf;
   border-radius: 4px;
-`;
+`
 
-//INPUT PHONEBOOK
 export const Input = styled.input`
   width: 140px;
   margin-top: 3px;
@@ -28,9 +25,8 @@ export const Input = styled.input`
   &:focus {
     border: 1px solid #4181e9;
   }
-`;
+`
 
-//BOTON PHONEBOOK
 export const Button = styled.button`
   margin: 15px 0 10px 10px;
   background-color: #ffffff;
@@ -45,4 +41,4 @@ export const Button = styled.button`
     background-color: #4181e9;
     border: 2px solid #7dafe6;
   }
-`;
+`
