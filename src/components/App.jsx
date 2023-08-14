@@ -15,8 +15,8 @@ class App extends Component {
       { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
     ],
     filter: '',
-    name: '',
-    number: ''
+    // name: '',
+    // number: ''
   };
 
   addContact = ({ name, number }) => {
@@ -47,9 +47,9 @@ class App extends Component {
     }));
   };
 
-  viewfilter = event => {
-    const { name, value } = event.currentTarget;
-    this.setState({ [name]: value});
+  viewfilter = newFilter => {
+
+    this.setState({ filter: newFilter});
   };
 
   render() {

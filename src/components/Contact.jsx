@@ -17,7 +17,7 @@ class Contact extends Component {
   };
 
   render () {
-    const { id, name, number  } = this-this.props;
+    const { id, name, number  } = this.props;
     return (
       <ContactItem key={id}>
         <p>
