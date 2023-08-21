@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { nanoid } from "nanoid";
-import ContactFrom from "./ContactFrom";
+import ContactFrom from "./ContactForm";
 import ContactList from "./contactList";
 import Filter from "./Filter";
-import { Section,TitlePhone, SectionContact, TitleContact } from "./App.styled";
+import { Section, TitlePhone, SectionContact, TitleContact } from "./App.styled";
 
 
 class App extends Component {
@@ -15,8 +15,7 @@ class App extends Component {
       { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
     ],
     filter: '',
-    // name: '',
-    // number: ''
+
   };
 
   addContact = ({ name, number }) => {

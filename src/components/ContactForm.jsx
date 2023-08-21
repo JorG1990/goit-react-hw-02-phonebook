@@ -1,7 +1,7 @@
 
 import PropTypes from "prop-types";
 import React, { Component } from "react";
-import { Form, Label, Input, Button } from "./ContactFrom.styled";
+import { Form, Label, Input, Button } from "./ContactForm.styled";
 
 class ContactFrom extends Component {
   state = {
